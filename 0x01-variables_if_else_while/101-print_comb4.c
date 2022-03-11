@@ -1,38 +1,46 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
+/* betty style doc for function main goes there */
 /**
- *main-Program entry point.
- *Return:0-success, Non-zero, fail.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, k = '0', j;
+	int i;
+	int j;
 
-	for (i = '0'; i <= '9'; i++)
+	i = 48;
+	j = 49;
+	while  ((i < 57) && (j < 58))
 	{
-		for (j = k; j <= '9'; j++)
+		putchar(i);
+		putchar(j);
+		if ((i == 56) && (j == 57))
 		{
-			if (i != j)
+			putchar('\n');
+			i++;
+			j++;
+		}
+		else
+		{
+			putchar(44);
+			putchar(32);
+			if (j < 57)
 			{
-				putchar(i);
-				putchar(j);
-			}
-			if (i == j)
-			{
-				continue;
-			}
-			if (i == '8' && j == '9')
-			{
-				break;
+				j++;
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
+				i++;
+				j = 1 + i;
 			}
 		}
-		k++;
-	}
-	putchar('\n');
-	return (0);
 
+	}
+
+	return (0);
 }
