@@ -3,28 +3,41 @@
  *main-Program entry point.
  *Return:0-success, Non-zero, fail.
  */
+
 int main(void)
 {
-	int i, j;
+	int i;
+	int j;
 
-	for (i = '0'; i <= '9'; i++)
+	i = 48;
+	j = 49;
+	while  ((i < 57) && (j < 58))
 	{
-		for (j = '0'; j <= '9'; j++)
+		putchar(i);
+		putchar(j);
+		if ((i == 56) && (j == 57))
 		{
-			putchar(i);
-			putchar(j);
-			if (i == '9' && j == '9')
+			putchar('\n');
+			i++;
+			j++;
+		}
+		else
+		{
+			putchar(44);
+			putchar(32);
+			if (j < 57)
 			{
-				break;
+				j++;
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
+				i++;
+				j = 1 + i;
 			}
 		}
+
 	}
-	putchar('\n');
+
 	return (0);
 
 }
