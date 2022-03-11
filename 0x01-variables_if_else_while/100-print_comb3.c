@@ -1,25 +1,30 @@
 #include <stdio.h>
 /**
- *main-program entry point
- *Return:0-success, Non-zero-error.
+ *main-Program entry point.
+ *Return:0-success, Non-zero, fail.
  */
 int main(void)
 {
-	int num;
+	int i, j;
 
-	for (num = '0'; num <= '9'; num++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		putchar(num);
-		if (num == '9')
+		for (j = '0'; j <= '9'; j++)
 		{
-			break;
-		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
+			putchar(i);
+			putchar(j);
+			if (i == '9' && j == '9')
+			{
+				break;
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
 	return (0);
+
 }
