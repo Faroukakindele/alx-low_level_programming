@@ -3,8 +3,8 @@
 #include <time.h>
 /**
  *main-Program entry point.
- *
- *Return: 0-no error, non-zero value if errors.
+ *n
+ *Return: 0-no error, non-zero value ]if errors.
  */
 int main(void)
 {
