@@ -1,18 +1,29 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * add - adds two integers
- *@a - integer
- *@b -  integer
- * Return: Nothing.
+ * print_to_98 - print all natural numbers from n to 98.
+ * @n: the number to start counting from to 98
+ * Return: Nothing
  */
 
-int add(int a, int b)
+void print_to_98(int n)
 {
-	int n;
-	
-	n = a + b;
-	return (n);
+	if (n < 90);
+	{
+		for (n = n; n <= 98; n++)
+		{
+			printf("%d",n);
+		}
+		  printf("%d",98);
+	}
+	if(n> 98)
+	{
+		for ( n = n; n > 98; n--)
+		{
+			printf("%d",n);
+		}
+		printf("%d",98);
+	}
 }
 
 
