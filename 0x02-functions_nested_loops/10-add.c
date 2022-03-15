@@ -2,7 +2,8 @@
 
 /**
  * add - adds two integers
- * Description: It prints 9 times table starting with 0
+ *@a - integer
+ *@b -  integer
  * Return: Nothing.
  */
 
