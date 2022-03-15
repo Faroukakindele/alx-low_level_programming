@@ -1,14 +1,17 @@
 #include "main.h"
-
 /**
- *main-Program entry point.
- *
- *Return: 0-no error, non-zero value if errorks.
+ *main-program entry point for execution.
+ *Return:0-success
  */
 int main(void)
 {
-	
-	
-	write("_putchar");
-	return 0;
+	char i[] = "Holberton";
+	int j;
+
+	for (j = 0; j < 9; j++)
+	{
+		_putchar(i[j]);
+	}
+	_putchar('\n');
+	return (0);
 }
