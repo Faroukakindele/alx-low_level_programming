@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_last_digit - get the last value value of the number from zero.
-* @r: character to test.
-* Return:the absolute value
+* jack_bauer - prints time table in this format: HH:MM
+* Description: function prints every minute in one day
+* Return:nothing
 */
 
 void jack_bauer(void)
