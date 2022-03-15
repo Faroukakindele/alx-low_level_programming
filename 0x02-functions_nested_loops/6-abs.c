@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* function _abs - tests the absolute sign  of a character
+* _abs - calculate the absolute value of the number from zero.
 * @r: character to test.
 * Return:the absolute value
 */
