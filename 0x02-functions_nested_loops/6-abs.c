@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
-* int _abs - tests the absolute sign  of a character
+* fuuction_abs - tests the absolute sign  of a character
 * @r: character to test.
 * Return:the absolute value
 */
 
 int _abs(int r)
 {
-	if(r >= 0)
+	if (r >= 0)
 	{
-		return(r);
+		return (r);
 	}
 	else
 	{
-		return(r *-1);
+		return (r * -1);
 	}
 }
 
