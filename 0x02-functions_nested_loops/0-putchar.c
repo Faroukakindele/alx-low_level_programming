@@ -1,17 +1,17 @@
 #include "main.h"
+#include <unistd.h>
 /**
  *main-program entry point for execution.
  *Return:0-success
  */
-int main(void)
+int main (void)
 {
-	char i[] = "Holberton";
-	int j;
+		char word[9] = "_putchar\n";
+		int i;
 
-	for (j = 0; j < 9; j++)
-	{
-		_putchar(i[j]);
-	}
-	_putchar('\n');
-	return (0);
+		for ( i = 0; i < 9; i++)
+		{
+			_putchar(word[i]);
+		}
+		return 0;
 }
