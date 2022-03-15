@@ -1,3 +1,4 @@
+#include "main.h"
 
 /**
  *main-Program entry point.
@@ -6,8 +7,8 @@
  */
 int main(void)
 {
-	char j ="putchar";
 	
-	putchar(j);
-	return 0;
+	
+	write("_putchar");
+	return (0);
 }
