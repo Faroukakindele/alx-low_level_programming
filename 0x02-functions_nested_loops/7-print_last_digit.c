@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _abs - calculate the absolute value of the number from zero.
+* print_last_digit - get the last value value of the number from zero.
 * @r: character to test.
 * Return:the absolute value
 */
@@ -17,7 +17,8 @@ int print_last_digit(int r)
 	{
 	  n = r % 10;
 	}
-	return (n)
+	_putchar((n % 10) + '0');
+	return (n % 10);
 }
 
 
