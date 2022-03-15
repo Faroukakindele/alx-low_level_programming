@@ -10,5 +10,5 @@ int main(void)
 	
 	
 	write("_putchar");
-	return (0);
+	return 0;
 }
