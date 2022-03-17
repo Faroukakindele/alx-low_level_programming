@@ -1,20 +1,27 @@
 #include <stdio.h>
+
 /**
- * main - computes and prints the sum of all the multiples
- * of 3 or 5 below 1024 (excluded)
+ * main - sum even fibonacci numbers under 4 million.
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i, sum = 0;
+	unsigned long c, i, j, k, sum;
 
-	for (i = 0; i < 1024; i++)
+	i = sum = 0;
+	j = 1;
+	for (c = 0; c < 50; c++)
 	{
-		if ((i % 5) == 0 || (i % 3) == 0)
+		k = i + j;
+		i = j;
+		j = k;
+		if ((k % 2 == 0) && (k < 4000000))
 		{
-			sum += i;
+			sum += k;
 		}
 	}
-	printf("%d\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
