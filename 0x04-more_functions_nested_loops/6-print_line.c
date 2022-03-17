@@ -9,9 +9,10 @@ void print_line(int n)
 {
 	int c=0;
 
-	if(c < n)
+	while(c < n)
 	{
 		_putchar(95);
+		c++;
 	}
-
+	_putchar("/n");
 }
