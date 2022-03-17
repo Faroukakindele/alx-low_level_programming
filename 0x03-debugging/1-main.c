@@ -1,6 +1,6 @@
 /**
 * main - causes an infinite loop
-* 
+* @i- character to test
 *Return: 0
 */
 
