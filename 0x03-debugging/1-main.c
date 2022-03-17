@@ -1,6 +1,7 @@
 /**
 * main - causes an infinite loop
-* Return: 0
+* 
+*Return: 0
 */
 
 int main(void)
@@ -11,11 +12,11 @@ int main(void)
 
         i = 0;
 
-         while (i < 10)
-         {
-                putchar(i);
-               i++;
-        }
+        //  while (i < 10)
+        //  {
+        //         putchar(i);
+        //        i++;
+        // }
 
         printf("Infinite loop avoided! \\o/\n");
 
