@@ -2,7 +2,7 @@
 
 /**
  *more_numbers- prints the numbers, from 0 to 14, i4 times followed by a new line
- * Return: nothing
+ * Description: Can only use _putchar 3 times
  */
 
 void more_numbers(void)
