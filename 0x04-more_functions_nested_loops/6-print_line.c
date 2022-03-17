@@ -14,5 +14,5 @@ void print_line(int n)
 		_putchar(95);
 		c++;
 	}
-	_putchar("/n");
+	_putchar(10);
 }
