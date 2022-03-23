@@ -6,7 +6,12 @@
  */
 int main(void)
 {
-	_putchar("_putchar\n");
+		char word[9] = "_putchar\n";
+		int i;
 
-	return (0);
+		for (i = 0; i < 9; i++)
+		{
+			_putchar("_putchar\n");
+		}
+		return (0);
 }
