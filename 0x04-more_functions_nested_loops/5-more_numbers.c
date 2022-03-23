@@ -12,18 +12,13 @@ void more_numbers(void)
 	int c, i;
 
 	c = 0;
-	while (c < 10)
+	int mark[16] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+	for (c = 0; c < 10; i++)
 	{
-		i = 0;
-		while (i < 15)
+		for (i = 0; i < 14; i++)
 		{
-			if (i > 9)
-				_putchar(i / 10 + '0');
-
-			_putchar(i % 10 + '0');
-			i++;
+			_putchar(mark[i]);
 		}
-		c++;
 		_putchar('\n');
 	}
 }
