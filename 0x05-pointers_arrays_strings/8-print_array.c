@@ -8,7 +8,7 @@
  * @a: int pointer variable
  * @n: int type variable
  */
-
+  
 void print_array(int *a, int n)
 {
 	int i;
